@@ -1,0 +1,36 @@
+﻿
+@{
+    ViewBag.Title = "RestaurantDashboard";
+}
+
+<h2>Restaurant Dashboard</h2>
+
+@*<a href="/Reg/RestaurantDashboard">Requests</a>
+<a href="/Reg/RestaurantDetails">  Details </a>*@
+
+<br />
+<br />
+<br />
+<form action="" method="post">
+
+    Id:
+    <input type="text" placeholder="Enter ID" name="id" class="form-control" /> <br />
+
+    Name:
+    <input type="text" placeholder="Enter the name of the food" name="name" class="form-control" /> <br />
+
+    Quantity:
+    <input type="text" placeholder="Enter the quantity" name="quantity" class="form-control" /> <br />
+
+    Assign:
+    <input type="text" placeholder="Not needed" name="assign" class="form-control" /> <br />
+
+    Restaurant ID:
+    <input type="text" name="restaurant_id" class="form-control" value="" /> <br />
+
+    <input type="submit" value="Request" class="btn btn-success" />
+</form>
+
+<br/>
+<br/>
+<a href="/Reg/Login"> Logout</a>

@@ -1,0 +1,39 @@
+﻿
+@{
+    ViewBag.Title = "RegIndex";
+}
+
+@if (@TempData["msg"] != null)
+{
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <span class="alert alert-info">@TempData["msg"]</span>
+}
+
+<!--<table class="table table-bordered">
+    @foreach (var st in Model)
+    {
+    <tr>
+        <td>@st.id</td>
+        <td>@st.name</td>
+        <td>@st.contact</td>
+        <td>@st.address</td>
+        <td>@st.email</td>
+        <td>@st.password</td>
+
+    </tr>
+    }
+
+</table> -->
+<br />
+<br />
+<br />
+<br />
+<br />
+<a href="/Reg/Registration">Go to Registration Page</a>
+<br />
+<a href="/Reg/Login">Go to Login Page</a>
+

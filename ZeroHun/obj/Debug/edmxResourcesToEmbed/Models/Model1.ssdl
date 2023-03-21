@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ZeroHungerModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Admin">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="Admin_Id" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="User_Name" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Password" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CollectionReq">
+    <Key>
+      <PropertyRef Name="ColId" />
+    </Key>
+    <Property Name="ColId" Type="int" Nullable="false" />
+    <Property Name="FoodType" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="MaxTime" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Date" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Status" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Employee">
+    <Key>
+      <PropertyRef Name="Emp_Id" />
+    </Key>
+    <Property Name="Emp_Id" Type="int" Nullable="false" />
+    <Property Name="Emp_name" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Phone_no" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Emp_User_Name" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Emp_pass" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Restaurant">
+    <Key>
+      <PropertyRef Name="Res_Id" />
+    </Key>
+    <Property Name="Res_Id" Type="int" Nullable="false" />
+    <Property Name="ResName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="ResLocation" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="ResUserName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="ResPass" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="ZeroHungerModelStoreContainer">
+    <EntitySet Name="Admin" EntityType="Self.Admin" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CollectionReq" EntityType="Self.CollectionReq" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Employee" EntityType="Self.Employee" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Restaurant" EntityType="Self.Restaurant" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>
